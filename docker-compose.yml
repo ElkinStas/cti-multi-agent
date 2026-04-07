@@ -1,0 +1,19 @@
+services:
+  api:
+    build: .
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+
+  ui:
+    build: .
+    ports:
+      - "8501:8501"
+    env_file:
+      - .env
+    command: ["streamlit", "run", "ui/app.py", "--server.address", "0.0.0.0"]
+    depends_on:
+      - api
+    environment:
+      - API_BASE_URL=http://api:8000

@@ -1,0 +1,37 @@
+[
+  {
+    "query": "moveit exploitation",
+    "expected_cves": ["CVE-2023-34362", "CVE-2024-5806"],
+    "expected_malware": ["Clop"],
+    "expected_software": ["MOVEit"],
+    "min_incidents": 2
+  },
+  {
+    "query": "clop ransomware campaigns",
+    "expected_cves": ["CVE-2023-34362"],
+    "expected_malware": ["Clop"],
+    "expected_software": ["MOVEit"],
+    "min_incidents": 1
+  },
+  {
+    "query": "log4shell incidents",
+    "expected_cves": ["CVE-2021-44228"],
+    "expected_malware": [],
+    "expected_software": ["Log4j"],
+    "min_incidents": 1
+  },
+  {
+    "query": "fortinet vpn exploits",
+    "expected_cves": ["CVE-2023-27997", "CVE-2024-21762"],
+    "expected_malware": [],
+    "expected_software": ["Fortinet", "VPN"],
+    "min_incidents": 1
+  },
+  {
+    "query": "solarwinds breach 2020",
+    "expected_cves": [],
+    "expected_malware": [],
+    "expected_software": ["SolarWinds"],
+    "min_incidents": 1
+  }
+]

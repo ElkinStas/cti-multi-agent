@@ -20,6 +20,7 @@ flowchart LR
 ```
 
 The pipeline is modeled as a **LangGraph `StateGraph`** — a directed acyclic graph with explicit state transitions between agents. Each agent is a separate class with a single `run()` method, invoked as a graph node. The orchestrator passes a shared typed state dict (`AgentState`) through the graph; each node reads from and writes to well-defined keys.
+![System Demonstration](working_show.gif)
 
 ### Agent responsibilities
 

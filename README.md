@@ -1,7 +1,7 @@
 # Cyber Threat Intelligence Agent System
 
 A multi-agent system that discovers cybersecurity incidents from the open web, extracts structured intelligence, enriches referenced CVEs via the NVD API, and serves a consolidated threat report through a REST API.
-
+![System Demonstration](working_show.gif)
 ## Architecture
 
 ```mermaid
